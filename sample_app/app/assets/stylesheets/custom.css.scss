@@ -12,6 +12,13 @@ textarea{resize: vertical;}
 $lightGray:#999;
 $grayMediumLight:#eaeaea;
 
+@mixin box_sizing{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
 /*---------ID CSS---------*/
 h1,h2,h3,h4,h5,h6{line-height:1;}
 
@@ -72,4 +79,13 @@ footer{
 	}
 }
 
+
+/*--------Debug box---------*/
+.debug_dump{
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+	@include box_sizing;
+}
 
